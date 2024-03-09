@@ -18,20 +18,36 @@
         height: 100%;
         background-color: black;
         content: '';
-        opacity: 0.7; // Alterei .7 para 0.7
-    } 
+        opacity: 0.7;
+    }
 
     &__text {
         margin-top: 64px;
         margin-bottom: 64px;
         font-size: 40px;
         line-height: 56px;
-        color: white;
-        font-weight: bold;
+
+        font-weight: 800;
+        text-align: center;
     }
 
-    &__img {
+    &__logo {
         margin: 0 auto;
         height: 80px;
+        display: block;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+        &__logo {
+            height: 40px;
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
     }
 }
